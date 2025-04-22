@@ -12,18 +12,20 @@ async def extract_daytime_forecast(json_data):
         periods = json_data['properties']['periods']
     except (KeyError, TypeError):
         raise ValueError("Invalid API structure — could not find 'properties.periods'")
-    
-    # api returns two entries, a normal one and then a night one. Eliminate night ones
-    filtered = []
-    for period in periods:
-        name = period.get("name", "")
-        if "night" not in name.lower():
-            filtered.append({
-                "startTime": period.get("startTime"),
-                "temperature": period.get("temperature")
-            })
+     # Load into DataFrame
+    df = pd.DataFrame(periods)
 
-    return filtered
+    if "name" not in df or "startTime" not in df or "temperature" not in df:
+        raise ValueError("Missing expected columns in data")
+
+    # Filter out rows with 'night' in the 'name' field (case-insensitive)
+    mask = ~df["name"].str.lower().str.contains("night", na=False)
+    df_filtered = df[mask][["startTime", "temperature"]]
+
+    # Drop rows with nulls and validate types
+    df_filtered = df_filtered.dropna(subset=["startTime", "temperature"])
+
+    return df_filtered.to_dict(orient="records")
 
 # Remove the days that match the maximum temperature
 async def eliminate_max_temperatures(forecast):

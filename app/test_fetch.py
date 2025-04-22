@@ -66,7 +66,4 @@ async def test_missing_fields():
     }
 
     result = await extract_daytime_forecast(mock_data)
-    assert result == [
-        {"startTime": "t1", "temperature": None},
-        {"startTime": None, "temperature": 85}
-    ]
+    assert result == []
