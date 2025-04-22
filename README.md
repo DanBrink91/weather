@@ -6,10 +6,10 @@ This is a FastAPI-based microservice that fetches weather data from the [Nationa
 
 ## 🚀 Features
 
-- Fetches and filters daytime weather forecasts using `aiohttp`
-- Stores results in a local SQLite database with `aiosqlite`
+- Fetches and filters daytime weather forecasts using `aiohttp` and `pandas`
+- Stores results in a local SQLite database with `aiosqlite` (async sqlite)
 - Provides two REST API endpoints:
-  - `GET /fetch_data` — fetches and stores the latest forecast
+  - `GET /fetch_data` — fetches, filters, and stores the latest forecast
   - `GET /results` — retrieves stored forecast data
 - Built with Docker, testable with Pytest
 
@@ -19,7 +19,6 @@ This is a FastAPI-based microservice that fetches weather data from the [Nationa
 
 - Docker + Docker Compose
 - Python 3.11 (used in container)
-- (Optional) Makefile for simplified commands
 
 ---
 
