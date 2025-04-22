@@ -91,6 +91,6 @@ Returns the stored forecast from the SQLite database.
 
 ---
 
-## 📄 License
+## 📝 Design Considerations
 
-MIT — use freely, credit appreciated.
+The libraries were picked because they were simple and supported async operations. Code was split into three parts, the main file where routes are described. Then for each route the logic behind it was put into its own file. Other then that the design was kept very simple, with most of the code being defensive against errors.
