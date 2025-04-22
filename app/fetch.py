@@ -60,16 +60,15 @@ async def fetch_and_store_data():
     try:
         # Store using aiosqlite
         async with aiosqlite.connect("data.db") as db:
-            await db.execute("DROP TABLE IF EXISTS weather")
             await db.execute("""
-                CREATE TABLE weather (
-                    Date DATE,
+                CREATE TABLE IF NOT EXISTS weather (
+                    Date DATE PRIMARY KEY,
                     Temperature INT
                 )
             """)
             for _, row in filtered_df.iterrows():
                 await db.execute("""
-                    INSERT INTO weather (Temperature, Date)
+                    INSERT OR REPLACE INTO weather (Temperature, Date)
                     VALUES (?, ?)
                 """, tuple([row['temperature'], row['startTime']]))
             await db.commit()
