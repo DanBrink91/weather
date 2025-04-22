@@ -88,7 +88,6 @@ Returns the stored forecast from the SQLite database.
 
 ## 🧹 Dev Tips
 
-- If the database schema changes, delete `data.db` and re-run `/update`
 - Rebuild with `--no-cache` if changes to `requirements.txt` aren't picked up
 
 ---
