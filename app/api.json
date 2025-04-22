@@ -1,0 +1,319 @@
+{                                                                                                            
+     "@context": [
+         "https://geojson.org/geojson-ld/geojson-context.jsonld",                                             
+         {                                                                                                    
+             "@version": "1.1",                                                                               
+             "wx": "https://api.weather.gov/ontology#",                                                       
+             "geo": "http://www.opengis.net/ont/geosparql#",                                                  
+             "unit": "http://codes.wmo.int/common/unit/",                                                     
+             "@vocab": "https://api.weather.gov/ontology#"                                                    
+         }                                                                                                    
+     ],                                                                                                       
+     "type": "Feature",                                                                                       
+     "geometry": {                                                                                            
+         "type": "Polygon",
+         "coordinates": [                                                                                     
+             [                                                                                                
+                 [                                                                                            
+                     -81.2089,                                                                                
+                     28.7813                                                                                  
+                 ],                                                                                           
+                 [                                                                                            
+                     -81.2062,                                                                                
+                     28.804000000000002
+                 ],                                                                                           
+                 [                                                                                            
+                     -81.23209999999999,                                                                      
+                     28.806300000000004                                                                       
+                 ],                                                                                           
+                 [                                                                                            
+                     -81.23469999999999,                                                                      
+                     28.783700000000003                                                                       
+                 ],
+                 [                                                                                            
+                     -81.2089,                                                                                
+                     28.7813                                                                                  
+                 ]                                                                                            
+             ]                                                                                                
+         ]                                                                                                    
+     },                                                                                                       
+     "properties": {                                                                                          
+         "units": "us",
+         "forecastGenerator": "BaselineForecastGenerator",                                                    
+         "generatedAt": "2025-04-21T20:03:13+00:00",                                                          
+         "updateTime": "2025-04-21T19:14:50+00:00",                                                           
+         "validTimes": "2025-04-21T13:00:00+00:00/P8D",                                                       
+         "elevation": {                                                                                       
+             "unitCode": "wmoUnit:m",                                                                         
+             "value": 14.9352                                                                                 
+         },                                                                                                   
+         "periods": [
+             {                                                                                                
+                 "number": 1,                                                                                 
+                 "name": "This Afternoon",                                                                    
+                 "startTime": "2025-04-21T16:00:00-04:00",                                                    
+                 "endTime": "2025-04-21T18:00:00-04:00",                                                      
+                 "isDaytime": true,                                                                           
+                 "temperature": 89,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "10 to 15 mph",                                                                 
+                 "windDirection": "E",                                                                        
+                 "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",                            
+                 "shortForecast": "Mostly Sunny",                                                             
+                 "detailedForecast": "Mostly sunny, with a high near 89. East wind 10 to 15 mph."             
+             },                                                                                               
+             {                                                                                                
+                 "number": 2,
+                 "name": "Tonight",                                                                           
+                 "startTime": "2025-04-21T18:00:00-04:00",                                                    
+                 "endTime": "2025-04-22T06:00:00-04:00",                                                      
+                 "isDaytime": false,                                                                          
+                 "temperature": 64,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null
+                 },                                                                                           
+                 "windSpeed": "5 to 15 mph",                                                                  
+                 "windDirection": "SE",                                                                       
+                 "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",                          
+                 "shortForecast": "Mostly Cloudy",                                                            
+                 "detailedForecast": "Mostly cloudy, with a low around 64. Southeast wind 5 to 15 mph, with gusts as high as 20 mph."                                                                                               
+             },
+             {                                                                                                
+                 "number": 3,                                                                                 
+                 "name": "Tuesday",                                                                           
+                 "startTime": "2025-04-22T06:00:00-04:00",
+                 "endTime": "2025-04-22T18:00:00-04:00",                                                      
+                 "isDaytime": true,                                                                           
+                 "temperature": 88,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "5 to 10 mph",                                                                  
+                 "windDirection": "SE",                                                                       
+                 "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+                 "shortForecast": "Partly Sunny",                                                             
+                 "detailedForecast": "Partly sunny, with a high near 88. Southeast wind 5 to 10 mph."         
+             },                                                                                               
+             {                                                                                                
+                 "number": 4,                                                                                 
+                 "name": "Tuesday Night",                                                                     
+                 "startTime": "2025-04-22T18:00:00-04:00",                                                    
+                 "endTime": "2025-04-23T06:00:00-04:00",                                                      
+                 "isDaytime": false,                                                                          
+                 "temperature": 65,                                                                           
+                 "temperatureUnit": "F",
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "5 to 10 mph",                                                                  
+                 "windDirection": "SE",                                                                       
+                 "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",                          
+                 "shortForecast": "Partly Cloudy",                                                            
+                 "detailedForecast": "Partly cloudy, with a low around 65. Southeast wind 5 to 10 mph."       
+             },                                                                                               
+             {                                                                                                
+                 "number": 5,                                                                                 
+                 "name": "Wednesday",                                                                         
+                 "startTime": "2025-04-23T06:00:00-04:00",                                                    
+                 "endTime": "2025-04-23T18:00:00-04:00",                                                      
+                 "isDaytime": true,                                                                           
+                 "temperature": 89,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "0 to 10 mph",                                                                  
+                 "windDirection": "ESE",                                                                      
+                 "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",                            
+                 "shortForecast": "Mostly Sunny",                                                             
+                 "detailedForecast": "Mostly sunny, with a high near 89. East southeast wind 0 to 10 mph."    
+             },                                                                                               
+             {                                                                                                
+                 "number": 6,                                                                                 
+                 "name": "Wednesday Night",
+                 "startTime": "2025-04-23T18:00:00-04:00",                                                    
+                 "endTime": "2025-04-24T06:00:00-04:00",                                                      
+                 "isDaytime": false,                                                                          
+                 "temperature": 65,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "5 to 10 mph",
+                 "windDirection": "ESE",                                                                      
+                 "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",                          
+                 "shortForecast": "Partly Cloudy",                                                            
+                 "detailedForecast": "Partly cloudy, with a low around 65. East southeast wind 5 to 10 mph."  
+             },                                                                                               
+             {                                                                                                
+                 "number": 7,                                                                                 
+                 "name": "Thursday",                                                                          
+                 "startTime": "2025-04-24T06:00:00-04:00",                                                    
+                 "endTime": "2025-04-24T18:00:00-04:00",                                                      
+                 "isDaytime": true,
+                 "temperature": 87,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "5 to 15 mph",                                                                  
+                 "windDirection": "E",
+                 "icon": "https://api.weather.gov/icons/land/day/few?size=medium",                            
+                 "shortForecast": "Sunny",                                                                    
+                 "detailedForecast": "Sunny, with a high near 87. East wind 5 to 15 mph, with gusts as high as 20 mph."                                                                                                             
+             },
+             {                                                                                                
+                 "number": 8,                                                                                 
+                 "name": "Thursday Night",                                                                    
+                 "startTime": "2025-04-24T18:00:00-04:00",                                                    
+                 "endTime": "2025-04-25T06:00:00-04:00",                                                      
+                 "isDaytime": false,                                                                          
+                 "temperature": 66,
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "5 to 10 mph",                                                                  
+                 "windDirection": "E",                                                                        
+                 "icon": "https://api.weather.gov/icons/land/night/few?size=medium",                          
+                 "shortForecast": "Mostly Clear",                                                             
+                 "detailedForecast": "Mostly clear, with a low around 66. East wind 5 to 10 mph."
+             },                                                                                               
+             {                                                                                                
+                 "number": 9,                                                                                 
+                 "name": "Friday",                                                                            
+                 "startTime": "2025-04-25T06:00:00-04:00",                                                    
+                 "endTime": "2025-04-25T18:00:00-04:00",                                                      
+                 "isDaytime": true,                                                                           
+                 "temperature": 87,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "5 to 15 mph",                                                                  
+                 "windDirection": "E",                                                                        
+                 "icon": "https://api.weather.gov/icons/land/day/few?size=medium",                            
+                 "shortForecast": "Sunny",                                                                    
+                 "detailedForecast": "Sunny, with a high near 87. East wind 5 to 15 mph, with gusts as high as 20 mph."                                                                                                             
+             },
+             {
+                 "number": 10,                                                                                
+                 "name": "Friday Night",                                                                      
+                 "startTime": "2025-04-25T18:00:00-04:00",                                                    
+                 "endTime": "2025-04-26T06:00:00-04:00",                                                      
+                 "isDaytime": false,                                                                          
+                 "temperature": 66,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null
+                 },                                                                                           
+                 "windSpeed": "5 to 10 mph",                                                                  
+                 "windDirection": "E",                                                                        
+                 "icon": "https://api.weather.gov/icons/land/night/few?size=medium",                          
+                 "shortForecast": "Mostly Clear",                                                             
+                 "detailedForecast": "Mostly clear, with a low around 66. East wind 5 to 10 mph."             
+             },                                                                                               
+             {                                                                                                
+                 "number": 11,                                                                                
+                 "name": "Saturday",                                                                          
+                 "startTime": "2025-04-26T06:00:00-04:00",
+                 "endTime": "2025-04-26T18:00:00-04:00",                                                      
+                 "isDaytime": true,                                                                           
+                 "temperature": 88,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "0 to 10 mph",                                                                  
+                 "windDirection": "E",
+                 "icon": "https://api.weather.gov/icons/land/day/few?size=medium",                            
+                 "shortForecast": "Sunny",                                                                    
+                 "detailedForecast": "Sunny, with a high near 88. East wind 0 to 10 mph."                     
+             },                                                                                               
+             {                                                                                                
+                 "number": 12,                                                                                
+                 "name": "Saturday Night",                                                                    
+                 "startTime": "2025-04-26T18:00:00-04:00",                                                    
+                 "endTime": "2025-04-27T06:00:00-04:00",                                                      
+                 "isDaytime": false,                                                                          
+                 "temperature": 66,
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "5 to 10 mph",                                                                  
+                 "windDirection": "SE",                                                                       
+                 "icon": "https://api.weather.gov/icons/land/night/few?size=medium",                          
+                 "shortForecast": "Mostly Clear",
+                 "detailedForecast": "Mostly clear, with a low around 66. Southeast wind 5 to 10 mph."        
+             },                                                                                               
+             {                                                                                                
+                 "number": 13,                                                                                
+                 "name": "Sunday",                                                                            
+                 "startTime": "2025-04-27T06:00:00-04:00",                                                    
+                 "endTime": "2025-04-27T18:00:00-04:00",                                                      
+                 "isDaytime": true,                                                                           
+                 "temperature": 90,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },                                                                                           
+                 "windSpeed": "0 to 10 mph",                                                                  
+                 "windDirection": "E",                                                                        
+                 "icon": "https://api.weather.gov/icons/land/day/few/rain_showers?size=medium",               
+                 "shortForecast": "Sunny then Slight Chance Rain Showers",                                    
+                 "detailedForecast": "A slight chance of rain showers after 2pm. Sunny, with a high near 90. East wind 0 to 10 mph."                                                                                                
+             },
+             {                                                                                                
+                 "number": 14,
+                 "name": "Sunday Night",                                                                      
+                 "startTime": "2025-04-27T18:00:00-04:00",                                                    
+                 "endTime": "2025-04-28T06:00:00-04:00",                                                      
+                 "isDaytime": false,                                                                          
+                 "temperature": 67,                                                                           
+                 "temperatureUnit": "F",                                                                      
+                 "temperatureTrend": "",                                                                      
+                 "probabilityOfPrecipitation": {                                                              
+                     "unitCode": "wmoUnit:percent",                                                           
+                     "value": null                                                                            
+                 },
+                 "windSpeed": "5 to 10 mph",                                                                  
+                 "windDirection": "E",                                                                        
+                 "icon": "https://api.weather.gov/icons/land/night/rain_showers/few?size=medium",             
+                 "shortForecast": "Slight Chance Rain Showers then Mostly Clear",                             
+                 "detailedForecast": "A slight chance of rain showers before 8pm. Mostly clear, with a low around 67. East wind 5 to 10 mph."                                                                                       
+             }
+         ]                                                                                                    
+     }                                                                                                        
+ } 
