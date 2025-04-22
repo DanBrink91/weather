@@ -55,7 +55,7 @@ app/
 ├── fetch.py              # Fetching, Filtering, and Saving results to DB
 ├── api.json              # Sample API response (optional for testing)
 ├── test_forecast.py      # Pytest test suite
-├── data.db               # SQLite DB (created after POST /update)
+├── data.db               # SQLite DB (created after GET /fetch_data)
 ├── requirements.txt
 Dockerfile
 docker-compose.yml
