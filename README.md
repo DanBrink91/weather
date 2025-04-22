@@ -37,8 +37,6 @@ docker-compose build
 docker-compose up
 ```
 
-Visit [http://localhost:8000/docs](http://localhost:8000/docs) to explore the API.
-
 ---
 
 ## 🧪 Running Tests
